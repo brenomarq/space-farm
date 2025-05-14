@@ -1,42 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Space Farm</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
     <nav class="nav-bar">
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-        </svg>
-        <div class="logo">
-            <img src="./assets/logo-escrita.png" alt="Logo escrita do Space Farm" height="30">
-            <img src="./assets/logo.png" alt="Ícone da logo do Space Farm" height="30">
-        </div> 
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="30"
+        height="30"
+        fill="currentColor"
+        class="bi bi-list"
+        viewBox="0 0 16 16"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+        />
+      </svg>
+      <div class="logo">
+        <img
+          src="./assets/logo-escrita.png"
+          alt="Logo escrita do Space Farm"
+          height="30"
+        />
+        <img
+          src="./assets/logo.png"
+          alt="Ícone da logo do Space Farm"
+          height="30"
+        />
+      </div>
     </nav>
 
     <section id="main-page">
-        <div class="pages">
-            <div class="choice">
-                Gestão da Fazenda
-            </div>
-            <div class="choice">
-                Estado da Fazenda
-            </div>
+      <div class="pages">
+        <div class="choice">Gestão da Fazenda</div>
+        <div class="choice">Estado da Fazenda</div>
+      </div>
+
+      <div class="selection-bar">
+        <button id="select-farm">
+          Escolha sua fazenda
+          <img src="./assets/arrow-down.svg" />
+        </button>
+        <img src="./assets/location.svg" alt="" />
+      </div>
+
+      <div class="map">
+        <img src="./assets/Figmap.png" width="100%" alt="Mapa de uma lavoura" />
+      </div>
+
+      <div class="notification">
+        <button id="notify">
+          Notificações
+          <img src="./assets/arrow-down.svg" alt="Dropdown de notificações" />
+        </button>
+        <div class="details">
+          <p>
+            As condições do umidade e temperatura nos talhões escolhidos estão
+            em normalidade, por conta de dados colhidos pela estaca e analisados
+            pela nossa equipe. Fique atendo aos nossos alertas.
+          </p>
+        </div>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <img src="./assets/plant.png" alt="Planta" />
+          <p>Planejar Safra</p>
         </div>
 
-        <div class="selection-bar">
-            <button id="select-farm">Escolha sua fazenda 
-                <img src="./assets/arrow-down.svg">
-            </button>
-            <img src="./assets/location.svg" alt="">
+        <div class="card">
+          <img src="./assets/Seed.png" alt="Semente" />
+          <p>Escolher Sementes</p>
         </div>
 
-        <div class="map">
-            <img src="./assets/Figmap.png" width="100%" alt="Mapa de uma lavoura">
+        <div class="card">
+          <img src="./assets/Flower.png" alt="Flor" />
+          <p>Tratamento Semente</p>
         </div>
+
+        <div class="card">
+          <img src="./assets/Bug.png" alt="Inseto" />
+          <p>Controle de Pragas</p>
+        </div>
+
+        <div class="card">
+          <img src="./assets/Add.png" alt="Layout" />
+          <p>Incluir Talhões</p>
+        </div>
+
+        <div class="card">
+          <img src="./assets/Task.png" alt="Gestão" />
+          <p>Gestão de Tarefas</p>
+        </div>
+      </div>
     </section>
-</body>
+  </body>
 </html>
