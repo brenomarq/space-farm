@@ -8,19 +8,27 @@
   </head>
   <body>
     <nav class="nav-bar">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="30"
-        height="30"
-        fill="currentColor"
-        class="bi bi-list"
-        viewBox="0 0 16 16"
-      >
-        <path
-          fill-rule="evenodd"
-          d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
-        />
-      </svg>
+
+      <button id="menu-button" class="menu-icon" aria-label="Abrir menu">
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          fill="currentColor"
+          class="bi bi-list"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 
+              0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 
+              .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5
+              m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 
+              0 1H3a.5.5 0 0 1-.5-.5"
+          />
+        </svg>
+      </button>
+
       <div class="logo">
         <img
           src="./assets/logo-escrita.png"
@@ -34,6 +42,23 @@
         />
       </div>
     </nav>
+
+    <aside id="sidebar" class="sidebar">
+      <div class="sidebar-header">
+        <img src="./assets/perfil.png" alt="MSE Agro"/>
+        <h3>MSE Agro</h3>
+        <small>CNPJ: 22.443.368/0001-22</small>
+      </div>
+      <ul class="menu-items">
+        <li><a href="#" class="active">Dados da conta</a></li>
+        <li><a href="#">Pagamentos</a></li>
+        <li><a href="#">Alertas</a></li>
+        <li><a href="#">Adicionar Usuário</a></li>
+        <li><a href="#">Configurações</a></li>
+        <li><a href="#">Suporte</a></li>
+        <li><a href="#">Sair</a></li>
+      </ul>
+    </aside>
 
     <section id="main-page">
       <div class="pages">
@@ -99,5 +124,8 @@
         </div>
       </div>
     </section>
+
+    <script src="./scripts/menu.js"></script>
+
   </body>
 </html>
