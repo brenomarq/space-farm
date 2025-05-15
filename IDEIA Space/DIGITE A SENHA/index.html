@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digite uma senha</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="card">
+    <img src="images/ampulheta.jpg" alt="ícone de ampulheta" class="hourglass-icon" />
+    <h2>Digite uma senha</h2>
+    <input type="password" id="senha" placeholder="Senha" required>
+    <input type="password" id="confirmarSenha" placeholder="Confirmar senha" required>
+    <div id="erro" class="error"></div>
+    <button onclick="validarSenha()">Ok</button>
+  </div>
+
+  <script>
+    function validarSenha() {
+      const senha = document.getElementById('senha').value;
+      const confirmar = document.getElementById('confirmarSenha').value;
+      const erro = document.getElementById('erro');
+
+      erro.textContent = '';
+
+      if (senha.length < 6 || confirmar.length < 6) {
+        erro.textContent = 'A senha deve ter no mínimo 6 caracteres.';
+        return;
+      }
+
+      if (senha !== confirmar) {
+        erro.textContent = 'As senhas não coincidem.';
+        return;
+      }
+
+    }
+  </script>
+
+</body>
+</html>
