@@ -1,0 +1,101 @@
+:root {
+  --primary-color: #198754;
+  --secondary-color: #94e80d;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  width: 200px;
+  height: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+.nav-bar {
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.pages {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.choice {
+  height: 35px;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px 15px 0 0;
+}
+
+.choice:hover {
+  background-color: var(--secondary-color);
+}
+
+.selection-bar {
+  height: 50px;
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.notification {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+#notify {
+  width: 300px;
+  justify-content: space-between;
+  color: var(--primary-color);
+}
+
+.details {
+  width: 300px;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+.cards {
+  margin: 10px 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.card {
+  color: #fff;
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 5px;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
