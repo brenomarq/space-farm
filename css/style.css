@@ -41,6 +41,14 @@ button {
   border-radius: 15px 15px 0 0;
 }
 
+#back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: #fff;
+}
+
 .choice:hover {
   background-color: var(--secondary-color);
 }
@@ -118,7 +126,7 @@ button {
   width: 260px;
   height: 100%;
   background: #fff;
-  box-shadow: 2px 0 8px rgba(0,0,0,0.1);
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
   transition: left 0.3s ease;
   z-index: 1000;
   padding-top: 60px; /* evita sobreposição com nav-bar */
@@ -167,4 +175,36 @@ button {
 .menu-items li a:hover {
   background: var(--secondary-color);
   color: #fff;
+}
+
+.information {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.temp-card {
+  border: 1px solid black;
+  padding: 10px;
+  width: 80%;
+  border-radius: 8px;
+}
+
+.title {
+  color: var(--primary-color);
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+}
+
+.data-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.temp-info,
+.umid-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

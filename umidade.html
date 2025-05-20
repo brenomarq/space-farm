@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space Farm</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <button id="menu-button" class="menu-icon" aria-label="Abrir menu">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          fill="currentColor"
+          class="bi bi-list"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 
+                0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 
+                .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5
+                m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 
+                0 1H3a.5.5 0 0 1-.5-.5"
+          />
+        </svg>
+      </button>
+
+      <div class="logo">
+        <img
+          src="./assets/logo-escrita.png"
+          alt="Logo escrita do Space Farm"
+          height="30"
+        />
+        <img
+          src="./assets/logo.png"
+          alt="Ícone da logo do Space Farm"
+          height="30"
+        />
+      </div>
+
+      <aside id="sidebar" class="sidebar">
+        <div class="sidebar-header">
+          <img src="./assets/perfil.png" alt="MSE Agro" />
+          <h3>MSE Agro</h3>
+          <small>CNPJ: 22.443.368/0001-22</small>
+        </div>
+        <ul class="menu-items">
+          <li><a href="#" class="active">Dados da conta</a></li>
+          <li><a href="#">Pagamentos</a></li>
+          <li><a href="#">Alertas</a></li>
+          <li><a href="#">Adicionar Usuário</a></li>
+          <li><a href="#">Configurações</a></li>
+          <li><a href="#">Suporte</a></li>
+          <li><a href="#">Sair</a></li>
+        </ul>
+      </aside>
+    </nav>
+
+    <section id="main-page">
+      <div class="pages">
+        <div id="back" class="choice">
+          <img src="./assets/back.png" alt="ícone de voltar" />
+          <p>Voltar</p>
+        </div>
+        <div class="choice">Estado da Fazenda</div>
+      </div>
+
+      <div class="map">
+        <img src="./assets/Lotes.png" width="100%" alt="Mapa de uma lavoura" />
+      </div>
+
+      <div class="information">
+        <div class="temp-card">
+          <div class="title">Temperatura e umidade do talhão 5</div>
+          <div class="data-info">
+            <div class="temp-info"></div>
+            <div class="umid-info"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./scripts/menu.js"></script>
+  </body>
+</html>
