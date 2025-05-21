@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Space Farm – Visualizar Dados</title>
+    <link rel="stylesheet" href="./style.css"/>
+  </head>
+  <body>
+    <div class="app-container">
+      <nav class="nav-bar">
+        <button id="menu-button" class="menu-icon" aria-label="Abrir menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+               viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1
+                     0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1
+                     .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5
+                     m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1
+                     0 1H3a.5.5 0 0 1-.5-.5"/>
+          </svg>
+        </button>
+        <div class="logo">
+          <img src="../../assets/logo-escrita.png" alt="Space Farm" height="30"/>
+          <img src="../../assets/logo.png"           alt="Ícone"         height="30"/>
+        </div>
+      </nav>
+
+      <main class="main-page">
+
+        <div class="state-bar">Estado da Fazenda</div>
+
+        <div class="filter-bar">
+          Saúde do solo
+          <img src="../../assets/location.svg" class="icon-pin" alt="pin"/>
+        </div>
+
+        <!-- Mapa -->
+        <div class="map-container">
+          <img src="../../assets/Figmap.png" alt="Mapa de satélite" class="map-image"/>
+          <div class="map-popup">0.711</div>
+          <div class="controls">
+            <button class="btn-zoom">＋</button>
+            <button class="btn-zoom">－</button>
+          </div>
+          <div class="legend">
+            <strong>NDVI</strong><br/>
+            0.615 – 0.711: 2.98 ha<br/>
+            0.519 – 0.615: 2.89 ha<br/>
+            …
+          </div>
+          <div class="map-footer">Clouds 0 ha / 0%</div>
+        </div>
+
+        <p class="date-label">Escolha a data de início e fim</p>
+        <div class="date-picker">
+          <input type="date" id="start" name="start"/>
+          <input type="date" id="end"   name="end"/>
+        </div>
+
+        <button class="btn btn-confirm">Confirmar</button>
+        <button class="btn btn-pdf">Baixar PDF</button>
+
+        <div class="notifications">
+          <h2 class="notifications-title">Notificações</h2>
+          <p>
+            As condições de umidade e temperatura nos talhões escolhidos estão em
+            normalidade, por conta de dados colhidos pela estação e analisados
+            pela nossa equipe. Fique atento aos nossos alertas.
+          </p>
+        </div>
+      </main>
+    </div>
+
+    <script src="../../scripts/menu.js"></script>
+  </body>
+</html>
