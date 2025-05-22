@@ -66,7 +66,7 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px;
+  padding: 20px;
 }
 
 #notify {
@@ -202,9 +202,92 @@ button {
   grid-template-columns: 1fr 1fr;
 }
 
+.temp-info {
+  border-right: 5px solid #198754;
+}
+
 .temp-info,
 .umid-info {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px;
+}
+
+.info-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  gap: 10px;
+}
+
+.info > p {
+  font-size: 4rem;
+  font-weight: bolder;
+  color: var(--primary-color);
+}
+
+.text-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lower-text {
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+.graph > img {
+  width: 100%;
+}
+
+.select-period {
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+.gray-area {
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+}
+
+.select-dates {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+#confirm-button {
+  background-color: var(--primary-color);
+  border: 0;
+  margin-bottom: 10px;
+}
+
+#download-button {
+  background-color: #075a005c;
+  border: 0;
+}
+
+.umid-buttons {
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }

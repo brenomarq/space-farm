@@ -20,10 +20,10 @@
           <path
             fill-rule="evenodd"
             d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 
-                0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 
-                .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5
-                m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 
-                0 1H3a.5.5 0 0 1-.5-.5"
+                  0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 
+                  .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5
+                  m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 
+                  0 1H3a.5.5 0 0 1-.5-.5"
           />
         </svg>
       </button>
@@ -68,44 +68,39 @@
         <div class="choice">Estado da Fazenda</div>
       </div>
 
-      <div class="map">
-        <img src="./assets/Lotes.png" width="100%" alt="Mapa de uma lavoura" />
+      <div class="graph">
+        <img src="./assets/Graph.png" alt="" />
       </div>
 
-      <div class="information">
-        <div class="temp-card">
-          <div class="title">Temperatura e umidade do talhão 5</div>
-          <div class="data-info">
-            <div class="temp-info">
-              <div class="info">
-                <p>90</p>
-                <div class="info-details">
-                  <img src="./assets/drop.png" alt="ícone de gota" />
-                  <p>%</p>
-                </div>
-              </div>
-              <div class="info">
-                <p>35</p>
-                <div class="info-details">
-                  <img
-                    src="./assets/Temperature.png"
-                    alt="ícone de termômetro"
-                  />
-                  <p>&deg;C</p>
-                </div>
-              </div>
-              <p>Médias das últimas 12 horas</p>
-            </div>
-            <div class="umid-info">
-              <div class="text-info">
-                <p class="upper-text">Umidade ideal</p>
-                <p class="lower-text">85 a 90%</p>
-              </div>
-              <div class="text-info">
-                <p class="upper-text">Temperatura ideal</p>
-                <p class="lower-text">30 a 35&deg;C</p>
-              </div>
-            </div>
+      <div class="select-period">
+        <button id="select-farm">
+          Escolha o período
+          <img src="./assets/arrow-down.svg" />
+        </button>
+      </div>
+
+      <div class="gray-area">
+        <p class="headline">Escolha a data de início e fim</p>
+        <div class="select-dates">
+          <input type="date" name="date" id="start" />
+          <input type="date" name="date" id="end" />
+        </div>
+        <div class="umid-buttons">
+          <button id="confirm-button">Confirmar</button>
+          <button id="download-button">Baixar Relatório PDF</button>
+        </div>
+
+        <div class="notification">
+          <button id="notify">
+            Notificações
+            <img src="./assets/arrow-down.svg" alt="Dropdown de notificações" />
+          </button>
+          <div class="details">
+            <p>
+              As condições do umidade e temperatura nos talhões escolhidos estão
+              em normalidade, por conta de dados colhidos pela estaca e
+              analisados pela nossa equipe. Fique atendo aos nossos alertas.
+            </p>
           </div>
         </div>
       </div>
