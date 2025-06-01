@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SpaceFARM</title>
+  <link rel="stylesheet" href="../styles/index.css"/>
+</head>
+<body>
+  <div class="app">
+    <header class="topo">
+      <div class="menu">☰</div>
+      <div class="logo-texto">
+        <img src="../images/Logo Escrita 1.png" alt="SpaceFARM" />
+      </div>
+      <div class="logo-icone">
+        <img src="../images/Logo (1).png" alt="Logo" />
+      </div>
+    </header>
+
+    <nav class="botoes-superiores">
+      <button class="btn voltar"><span>⬅</span> Voltar</button>
+      <button class="btn gestao">Gestão da Fazenda</button>
+    </nav>
+
+    <section class="instrucao">
+      <p>Desenhe no mapa abaixo o seu talhão com a ferramenta de seleção</p>
+      <img src="../images/localização.png" alt="Localização" class="icone" />
+    </section>
+
+    <section class="mapa">
+      <img src="../images/Lotes.png" alt="Mapa" class="imagem-mapa" />
+      <div class="botoes-mapa">
+        <button><img src="../images/ícone verde.png" alt="Desenhar" /></button>
+        <button><img src="../images/ícone Azul.png" alt="Apagar" /></button>
+        <button><img src="../images/íconeVermelho.png" alt="Finalizar" /></button>
+      </div>
+      <div class="zoom-btns">
+        <button class="zoom">+</button>
+        <button class="zoom">-</button>
+      </div>
+    </section>
+
+    <form class="formulario">
+      <select>
+        <option>Escolher Fazenda</option>
+      </select>
+      <input type="text" placeholder="Nome do talhão" />
+      <input type="text" placeholder="Área do Talhão" />
+      <select>
+        <option>Sistema de Plantio</option>
+      </select>
+    </form>
+
+    <div class="botoes-formulario">
+      <a href="../pages/tela2.html" class="btn salvar">Salvar Talhão</a>
+      <a href="../pages/tela3.html" class="btn nova-fazenda">Adicionar Nova Fazenda</a>
+       <a href="../pages/tela4.html" class="btn ver-talhoes">Ver meus talhões</a>
+    </div>
+  </div>
+</body>
+</html>

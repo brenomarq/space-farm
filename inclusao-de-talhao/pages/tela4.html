@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SpaceFARM - Talhões</title>
+  <link rel="stylesheet" href="../styles/tela4.css"/>
+</head>
+<body>
+  <div class="app">
+    <header class="topo">
+      <div class="menu">☰</div>
+      <div class="logo-texto">
+        <img src="../images/Logo Escrita 1.png" alt="SpaceFARM" />
+      </div>
+      <div class="logo-icone">
+        <img src="../images/Logo (1).png" alt="Logo" />
+      </div>
+    </header>
+
+    <nav class="botoes-superiores">
+      <button class="btn voltar"><span>⬅</span> Voltar</button>
+      <button class="btn gestao">Gestão da Fazenda</button>
+    </nav>
+
+    <section class="instrucao">
+      <p>Segue a lista dos talhões que você tem hoje ativos e cadastrados</p>
+      <img src="../images/localização.png" alt="Localização" class="icone" />
+    </section>
+
+    <!-- Card do talhão -->
+    <div class="card-talhoes">
+      <div class="card-topo" onclick="toggleCard(this)">
+        <span class="card-titulo">T-5 Plantio Soja II</span>
+        <svg class="seta" width="16" height="16" viewBox="0 0 24 24"><path d="M8 10l4 4 4-4" stroke="#307a51" stroke-width="2" fill="none" /></svg>
+      </div>
+
+      <div class="card-conteudo">
+        <p>Nome do talhão: <strong>T-5 - Soja II Mista</strong></p>
+
+        <p class="linha-info">
+          <span>Área - <strong>29’2358 Ha</strong></span>
+          <span class="icones-acao">
+            <img src="../images/icone caneta.png" class="icone-acao" alt="Editar" />
+            <img src="../images/lixeira.png" class="icone-acao" alt="Excluir" />
+          </span>
+        </p>
+
+        <p>Sistema do Plantio - <strong>Convencional</strong></p>
+        <p>Status do talhão - <strong>Ativo</strong></p>
+
+        <img src="../images/imagemTela4.png" class="imagem-mapa" alt="Mapa do talhão" />
+      </div>
+    </div>
+
+    <!-- Outros talhões -->
+    <button class="btn desativado">T6 - Plantio Milho II</button>
+    <button class="btn desativado">T7 - Plantio Milho V</button>
+
+    <!-- Dropdown informativo -->
+    <div class="dropdown-verificacao">
+      <div class="dropdown-topo" onclick="toggleDropdown(this)">
+        <span>Verifique as informações</span>
+        <svg class="seta" width="16" height="16" viewBox="0 0 24 24"><path d="M8 10l4 4 4-4" stroke="#307a51" stroke-width="2" fill="none" /></svg>
+      </div>
+      <div class="dropdown-conteudo">
+        <p><strong>Recomendamos o plantio de Soja</strong>, por conta das melhores condições do solo e do mercado com base nos dados analisados dos talhões e histórico da fazenda.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleDropdown(el) {
+      el.classList.toggle('ativo');
+      const seta = el.querySelector('.seta path');
+      seta.setAttribute('d', el.classList.contains('ativo') ? 'M8 14l4-4 4 4' : 'M8 10l4 4 4-4');
+      el.nextElementSibling.style.display = el.classList.contains('ativo') ? 'block' : 'none';
+    }
+
+    function toggleCard(el) {
+      el.classList.toggle('ativo');
+      const seta = el.querySelector('.seta path');
+      seta.setAttribute('d', el.classList.contains('ativo') ? 'M8 14l4-4 4 4' : 'M8 10l4 4 4-4');
+      el.nextElementSibling.style.display = el.classList.contains('ativo') ? 'block' : 'none';
+    }
+  </script>
+</body>
+</html>
