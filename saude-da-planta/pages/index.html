@@ -1,0 +1,104 @@
+<!DOCTYPE html> 
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SpaceFARM</title>
+  <link rel="stylesheet" href="../styles/index.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="topo">
+      <div class="menu">☰</div>
+      <div class="logo-texto">
+        <img src="../images/Logo Escrita 1.png" alt="SpaceFARM" />
+      </div>
+      <div class="logo-icone">
+        <img src="../images/Logo (1).png" alt="Logo" />
+      </div>
+    </header>
+
+    <nav class="botoes-superiores">
+      <button class="btn voltar"><span>⬅</span> Voltar</button>
+      <button class="btn gestao">Estado da Fazenda</button>
+    </nav>
+
+    <section class="mapa">
+      <img src="../images/mapa.png" alt="Mapa de produtividade" class="imagem-mapa" />
+    </section>
+
+    <section class="painel-dados">
+      <div class="caixa-dados">
+        <h2 class="titulo-dados">Saúde da planta no talhão 5</h2>
+
+        <h3 class="subtitulo-centro">
+          Saúde da planta <span class="info-icon">🛈</span>
+        </h3>
+
+        <div class="caixas-status">
+          <div class="caixa-status status-boa">Boa</div>
+          <div class="caixa-status dias-colheita">
+            Início da colheita:<br />
+            <span class="dias">64</span> dias
+          </div>
+        </div>
+
+        <h3 class="subtitulo-centro">
+          Estado Fenológico Esperado <span class="info-icon">🛈</span>
+        </h3>
+
+        <div class="estagios-feno">
+          <div class="estagio-feno">
+            <div class="descricao-texto cinza">
+              <p class="sigla">V3</p>
+              <p class="descricao">Dois trifólios<br>(ou três nós)</p>
+            </div>
+            <div class="imagem-container branco">
+              <img src="../images/V3.png" alt="V3" />
+            </div>
+          </div>
+
+          <div class="estagio-feno">
+            <div class="descricao-texto cinza">
+              <p class="sigla">V4</p>
+              <p class="descricao">Três trifólios<br>(ou quatro nós)</p>
+            </div>
+            <div class="imagem-container branco">
+              <img src="../images/v4.png" alt="V4" />
+            </div>
+          </div>
+
+          <div class="estagio-feno">
+            <div class="descricao-texto cinza">
+              <p class="sigla">V5</p>
+              <p class="descricao">Quatro trifólios<br>(ou cinco nós)</p>
+            </div>
+            <div class="imagem-container branco">
+              <img src="../images/v5.png" alt="V5" />
+            </div>
+          </div>
+        </div>
+
+        <button class="btn-ver-detalhes">Ver detalhes</button>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    const estagios = document.querySelectorAll('.estagio-feno');
+
+    estagios.forEach((estagio) => {
+      estagio.addEventListener('click', () => {
+        estagios.forEach((e) => {
+          const desc = e.querySelector('.descricao-texto');
+          desc.classList.remove('verde');
+          desc.classList.add('cinza');
+        });
+        const descricao = estagio.querySelector('.descricao-texto');
+        descricao.classList.remove('cinza');
+        descricao.classList.add('verde');
+      });
+    });
+  </script>
+</body>
+</html>
