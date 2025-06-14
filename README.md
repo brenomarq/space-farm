@@ -2,7 +2,7 @@
 
 # SpaceFarm
 
-SpaceFarm é um aplicativo web interativo, desenvolvido em **HTML**, **CSS** e **JavaScript**, criado para ajudar a **monitorar a saúde do solo**\! Ele te leva para uma "fazenda espacial" simulada, onde você pode acompanhar e visualizar dados importantes sobre as condições do solo.
+SpaceFarm é um aplicativo web interativo, desenvolvido em **HTML**, **CSS** e **JavaScript**, criado para ajudar a **monitorar a saúde do solo**\! Ele te ajuda a monitorar a saúde do solo de maneira eficiente e simples.
 
 -----
 
@@ -48,12 +48,6 @@ Se você deseja explorar o código ou fazer modificações, pode rodar o `index.
   * **HTML5:** Estrutura base do aplicativo.
   * **CSS3:** Estilização e design visual.
   * **JavaScript:** Lógica do aplicativo e funcionalidades de interação.
-
------
-
-## Contribuições
-
-Sinta-se à vontade para explorar o código, fazer modificações ou sugerir melhorias\! Se tiver alguma ideia ou encontrar um bug, abra uma *issue* ou envie um *pull request* no repositório do GitHub.
 
 -----
 
